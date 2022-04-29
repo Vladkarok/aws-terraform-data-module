@@ -24,15 +24,18 @@ data "aws_route53_zone" "primary" {
 ## Outputs ##
 #############
 output "latest_ubuntu_ami_id" {
-  value = data.aws_ami.ubuntu_latest.id
+  description = "Ubuntu 20.04 LTST AMI ID"
+  value       = data.aws_ami.ubuntu_latest.id
 }
 
 output "latest_amazon_linux_ami_id" {
-  value = data.aws_ami.amazon_linux_latest.id
+  description = "Amazon Linux 2 AMI ID"
+  value       = data.aws_ami.amazon_linux_latest.id
 }
 
 output "domain" {
-  value = data.aws_route53_zone.primary.domain.zpne_id
+  description = "Route53 ZONE ID"
+  value       = data.aws_route53_zone.primary.domain.zpne_id
 }
 
 ###############
