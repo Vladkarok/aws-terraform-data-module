@@ -11,6 +11,7 @@ Will be soon...
 | Name | Type |
 |------|------|
 | [Data Source: aws_ami](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami) | resource |
+| [Data Source: aws_route53_zone](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/route53-zone) | resource |
 
 ## Inputs
 
