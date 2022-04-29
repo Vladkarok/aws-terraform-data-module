@@ -4,8 +4,18 @@ When using community modules in terragrunt, usually there is no convenient way t
 Here is module for for exporting latest Ubuntu 20.04 LTS AMI ID and Amazon Linux 2 AMI ID. Also it exports Route53 zone ID.
 
 ## Usage
-
-Will be soon...
+`terragrunt.hcl`
+```
+include {
+  path = find_in_parent_folders()
+}
+terraform {
+  source = "git::https://github.com/Vladkarok/aws-terraform-data-module.git//?ref=main" 
+}
+inputs = {
+  domain = "your.domain"
+}
+```
 
 ## Resources
 | Name | Type |
