@@ -35,7 +35,7 @@ output "latest_amazon_linux_ami_id" {
 
 output "domain" {
   description = "Route53 ZONE ID"
-  value       = data.aws_route53_zone.primary.domain.zpne_id
+  value       = data.aws_route53_zone.primary.zone_id
 }
 
 ###############
