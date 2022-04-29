@@ -1,7 +1,7 @@
 # AWS data module (for usage with Terragrunt)
 
 When using community modules in terragrunt, usually there is no convenient way to use `data` resources.  
-Here is module for for exporting latest Ubuntu 20.04 LTS AMI ID and Amazon Linux 2 AMI ID. Also it exports Route53 zone ID.
+Here is module for for exporting **latest Ubuntu 20.04 LTS AMI ID** and **Amazon Linux 2 AMI ID**. Also it exports **Route53 zone ID**.
 
 ## Usage
 `terragrunt.hcl`
