@@ -10,7 +10,7 @@ include {
   path = find_in_parent_folders()
 }
 terraform {
-  source = "git::https://github.com/Vladkarok/aws-terraform-data-module.git//?ref=main" 
+  source = "git::https://github.com/Vladkarok/terraform-aws-datainfo.git//?ref=main" 
 }
 inputs = {
   domain = "your.domain"
